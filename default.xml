@@ -15,16 +15,20 @@
            revision="n-2.1"
            review="gerrit.nameless-rom.org" />
 
+  <remote revision="refs/heads/SoftUI-1.0"
+          name="soft-ui"
+          fetch="https://github.com/soft-ui" />
+
   <default revision="refs/heads/cm-12.1"
            remote="github"
            sync-c="true"
            sync-j="16" />
 
-  <project path="build" name="NamelessRom/android_build" revision="n-2.1">
+  <project path="build" name="Soft-UI/android_build" revision="SoftUI-1.0">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="android" name="NamelessRom/android" revision="n-2.1" />
+  <project path="android" name="Soft-UI/android" revision="SoftUI-1.0" />
 
   <!-- Nameless START -->
   <project path="bionic" name="NamelessRom/android_bionic" groups="pdk" revision="n-2.1" />
@@ -35,7 +39,7 @@
   <project path="external/sepolicy" name="NamelessRom/android_external_sepolicy" groups="pdk" revision="n-2.1" />
   <project path="external/skia" name="NamelessRom/android_external_skia" groups="pdk-cw-fs" revision="n-2.1" />
   <project path="frameworks/av" name="NamelessRom/android_frameworks_av" groups="pdk" revision="n-2.1" />
-  <project path="frameworks/base" name="NamelessRom/android_frameworks_base" revision="n-2.1" />
+  <project path="frameworks/base" name="SoftUI/android_frameworks_base" />
   <project path="frameworks/native" name="NamelessRom/android_frameworks_native" groups="pdk" revision="n-2.1" />
   <project path="frameworks/volley" name="NamelessRom/android_frameworks_volley" revision="n-2.1" />
   <project path="hardware/broadcom/wlan" name="NamelessRom/android_hardware_broadcom_wlan" groups="broadcom_wlan" revision="n-2.1" />
@@ -43,9 +47,9 @@
   <project path="libcore" name="NamelessRom/android_libcore" revision="n-2.1" />
   <project path="packages/apps/NamelessOTA" name="NamelessRom/android_packages_apps_NamelessOTA" revision="n-2.1" />
   <project path="packages/apps/Perception" name="NamelessRom/android_packages_apps_Perception" revision="n-2.1" />
-  <project path="packages/apps/Screencast" name="NamelessRom/android_packages_apps_Screencast" revision="n-2.1" />
-  <project path="packages/apps/Settings" name="NamelessRom/android_packages_apps_Settings" revision="n-2.1" />
-  <project path="packages/apps/SetupWizard" name="NamelessRom/android_packages_apps_SetupWizard" revision="n-2.1" />
+  <project path="packages/apps/Screencast" name="Soft-UI/android_packages_apps_Screencast" />
+  <project path="packages/apps/Settings" name="Soft-UI/android_packages_apps_Settings" />
+  <project path="packages/apps/SetupWizard" name="Soft-UI/android_packages_apps_SetupWizard" />
   <project path="system/core" name="NamelessRom/android_system_core" groups="pdk" revision="n-2.1" />
   <project path="vendor/nameless" name="NamelessRom/android_vendor_nameless" revision="n-2.1">
     <copyfile src="quickcompile/bootimage/Android.mk" dest="kernel/Android.mk" />
@@ -448,49 +452,49 @@
   <project path="hardware/ti/wpan" name="CyanogenMod/android_hardware_ti_wpan" />
   <project path="libnativehelper" name="CyanogenMod/android_libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" remote="aosp" />
-  <project path="packages/apps/AudioFX" name="CyanogenMod/android_packages_apps_AudioFX" />
+  <project path="packages/apps/AudioFX" name="Soft-UI/android_packages_apps_AudioFX" />
   <project path="packages/apps/BasicSmsReceiver" name="CyanogenMod/android_packages_apps_BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="CyanogenMod/android_packages_apps_Bluetooth" />
   <project path="packages/apps/BluetoothExt" name="CyanogenMod/android_packages_apps_BluetoothExt" />
-  <project path="packages/apps/Browser" name="CyanogenMod/android_packages_apps_Browser" />
-  <project path="packages/apps/Calculator" name="CyanogenMod/android_packages_apps_Calculator" />
-  <project path="packages/apps/Calendar" name="CyanogenMod/android_packages_apps_Calendar" />
-  <project path="packages/apps/Camera2" name="CyanogenMod/android_packages_apps_Camera2" />
+  <project path="packages/apps/Browser" name="Soft-UI/android_packages_apps_Browser" />
+  <project path="packages/apps/Calculator" name="Soft-UI/android_packages_apps_Calculator" />
+  <project path="packages/apps/Calendar" name="Soft-UI/android_packages_apps_Calendar" />
+  <project path="packages/apps/Camera2" name="Soft-UI/android_packages_apps_Camera2" />
   <project path="packages/apps/CellBroadcastReceiver" name="CyanogenMod/android_packages_apps_CellBroadcastReceiver" />
   <project path="packages/apps/CertInstaller" name="CyanogenMod/android_packages_apps_CertInstaller" />
   <!--project path="packages/apps/CMAccount" name="CyanogenMod/android_packages_apps_CMAccount" /-->
   <!--project path="packages/apps/CMBugReport" name="CyanogenMod/android_packages_apps_CMBugreport" /-->
-  <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" />
+  <project path="packages/apps/CMFileManager" name="Soft-UI/android_packages_apps_CMFileManager" />
   <!--project path="packages/apps/CMHome" name="CyanogenMod/android_packages_apps_CMHome" /-->
   <!--project path="packages/apps/CMUpdater" name="CyanogenMod/android_packages_apps_CMUpdater" /-->
-  <!--project path="packages/apps/CMWallpapers" name="CyanogenMod/android_packages_apps_CMWallpapers" /-->
-  <project path="packages/apps/Contacts" name="CyanogenMod/android_packages_apps_Contacts" />
-  <project path="packages/apps/ContactsCommon" name="CyanogenMod/android_packages_apps_ContactsCommon" />
-  <project path="packages/apps/DeskClock" name="CyanogenMod/android_packages_apps_DeskClock" />
-  <project path="packages/apps/Dialer" name="CyanogenMod/android_packages_apps_Dialer" />
-  <project path="packages/apps/Eleven" name="CyanogenMod/android_packages_apps_Eleven" />
-  <project path="packages/apps/Email" name="CyanogenMod/android_packages_apps_Email" />
+  <project path="packages/apps/CMWallpapers" name="Soft-UI/android_packages_apps_CMWallpapers" />
+  <project path="packages/apps/Contacts" name="Soft-UI/android_packages_apps_Contacts" />
+  <project path="packages/apps/ContactsCommon" name="Soft-UI/android_packages_apps_ContactsCommon" />
+  <project path="packages/apps/DeskClock" name="Soft-UI/android_packages_apps_DeskClock" />
+  <project path="packages/apps/Dialer" name="Soft-UI/android_packages_apps_Dialer" />
+  <project path="packages/apps/Eleven" name="Soft-UI/android_packages_apps_Eleven" />
+  <project path="packages/apps/Email" name="Soft-UI/android_packages_apps_Email" />
   <project path="packages/apps/Exchange" name="CyanogenMod/android_packages_apps_Exchange" />
-  <project path="packages/apps/Gallery2" name="CyanogenMod/android_packages_apps_Gallery2" />
+  <project path="packages/apps/Gallery2" name="Soft-UI/android_packages_apps_Gallery2" />
   <project path="packages/apps/HTMLViewer" name="CyanogenMod/android_packages_apps_HTMLViewer" />
   <project path="packages/apps/InCallUI" name="CyanogenMod/android_packages_apps_InCallUI" />
   <project path="packages/apps/KeyChain" name="CyanogenMod/android_packages_apps_KeyChain" />
-  <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" />
+  <project path="packages/apps/LockClock" name="Soft-UI/android_packages_apps_LockClock" />
   <project path="packages/apps/ManagedProvisioning" name="CyanogenMod/android_packages_apps_ManagedProvisioning" />
-  <project path="packages/apps/Mms" name="CyanogenMod/android_packages_apps_Mms-caf" />
+  <project path="packages/apps/Mms" name="Soft-UI/android_packages_apps_Mms-caf" />
   <project path="packages/apps/Nfc" name="CyanogenMod/android_packages_apps_Nfc" />
   <project path="packages/apps/OneTimeInitializer" name="platform/packages/apps/OneTimeInitializer" remote="aosp" />
   <project path="packages/apps/PackageInstaller" name="CyanogenMod/android_packages_apps_PackageInstaller" />
-  <project path="packages/apps/PhoneCommon" name="CyanogenMod/android_packages_apps_PhoneCommon" />
+  <project path="packages/apps/PhoneCommon" name="Soft-UI/android_packages_apps_PhoneCommon" />
   <project path="packages/apps/Profiles" name="CyanogenMod/android_packages_apps_Profiles" />
   <project path="packages/apps/Provision" name="CyanogenMod/android_packages_apps_Provision" />
   <project path="packages/apps/SmartCardService" name="CyanogenMod/android_packages_apps_SmartCardService" />
-  <project path="packages/apps/SoundRecorder" name="CyanogenMod/android_packages_apps_SoundRecorder" />
+  <project path="packages/apps/SoundRecorder" name="Soft-UI/android_packages_apps_SoundRecorder" />
   <project path="packages/apps/SpeechRecorder" name="CyanogenMod/android_packages_apps_SpeechRecorder" />
   <project path="packages/apps/Stk" name="CyanogenMod/android_packages_apps_Stk" />
   <project path="packages/apps/Tag" name="CyanogenMod/android_packages_apps_Tag" />
   <project path="packages/apps/Terminal" name="CyanogenMod/android_packages_apps_Terminal" />
-  <project path="packages/apps/ThemeChooser" name="CyanogenMod/android_packages_apps_ThemeChooser" />
+  <project path="packages/apps/ThemeChooser" name="Soft-UI/android_packages_apps_ThemeChooser" />
   <project path="packages/apps/TvSettings" name="CyanogenMod/android_packages_apps_TvSettings" />
   <project path="packages/apps/UnifiedEmail" name="CyanogenMod/android_packages_apps_UnifiedEmail" />
   <project path="packages/experimental" name="CyanogenMod/android_packages_experimental" />
@@ -498,7 +502,7 @@
   <project path="packages/providers/ApplicationsProvider" name="CyanogenMod/android_packages_providers_ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="CyanogenMod/android_packages_providers_CalendarProvider" />
   <project path="packages/providers/ContactsProvider" name="CyanogenMod/android_packages_providers_ContactsProvider" />
-  <project path="packages/providers/DownloadProvider" name="CyanogenMod/android_packages_providers_DownloadProvider" />
+  <project path="packages/providers/DownloadProvider" name="Soft-UI/android_packages_providers_DownloadProvider" />
   <project path="packages/providers/MediaProvider" name="CyanogenMod/android_packages_providers_MediaProvider" />
   <project path="packages/providers/PartnerBookmarksProvider" name="CyanogenMod/android_packages_providers_PartnerBookmarksProvider" />
   <project path="packages/providers/TelephonyProvider" name="CyanogenMod/android_packages_providers_TelephonyProvider" />
