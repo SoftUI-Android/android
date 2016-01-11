@@ -51,9 +51,10 @@
   <project path="packages/apps/Settings" name="Soft-UI/android_packages_apps_Settings" />
   <project path="packages/apps/SetupWizard" name="Soft-UI/android_packages_apps_SetupWizard" />
   <project path="system/core" name="NamelessRom/android_system_core" groups="pdk" revision="n-2.1" />
-  <project path="vendor/nameless" name="Soft-UI/android_vendor_nameless" />
+  <project path="vendor/nameless" name="Soft-UI/android_vendor_nameless">
     <copyfile src="quickcompile/bootimage/Android.mk" dest="kernel/Android.mk" />
     <copyfile src="quickcompile/recovery/Android.mk" dest="bootable/Android.mk" />
+  </project>
   <project path="vendor/nameless/api" name="NamelessRom/website_api" revision="master" />
   <!-- Nameless END -->
 
