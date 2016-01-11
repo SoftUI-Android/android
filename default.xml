@@ -46,7 +46,7 @@
   <project path="hardware/libhardware" name="NamelessRom/android_hardware_libhardware" groups="pdk" revision="n-2.1" />
   <project path="libcore" name="NamelessRom/android_libcore" revision="n-2.1" />
   <project path="packages/apps/NamelessOTA" name="NamelessRom/android_packages_apps_NamelessOTA" revision="n-2.1" />
-  <project path="packages/apps/Perception" name="NamelessRom/android_packages_apps_Perception" revision="n-2.1" />
+  <project path="packages/apps/Perception" name="Soft-UI/android_packages_apps_Perception" revision="n-2.1" />
   <project path="packages/apps/Screencast" name="Soft-UI/android_packages_apps_Screencast" />
   <project path="packages/apps/Settings" name="Soft-UI/android_packages_apps_Settings" />
   <project path="packages/apps/SetupWizard" name="Soft-UI/android_packages_apps_SetupWizard" />
