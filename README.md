@@ -3,8 +3,11 @@ SoftUI
 SoftUI는 Nameless 기반 롬입니다.
 
 Nameless GITHUB│Github.com/NamelessRom
+
 Nameless HOMEPAGE│Nameless-rom.org
+
 SoftUI GITHUB│Github.com/Soft-UI
+
 SoftUI HOMEPAGE│SoftUI.PE.HU
 
 Thanks TO
