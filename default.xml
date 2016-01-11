@@ -24,7 +24,7 @@
            sync-c="true"
            sync-j="16" />
 
-  <project path="build" name="Soft-UI/android_build" revision="SoftUI-1.0">
+  <project path="build" name="Soft-UI/android_build">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
