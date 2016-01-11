@@ -54,8 +54,6 @@
   <project path="vendor/nameless" name="Soft-UI/android_vendor_nameless" />
     <copyfile src="quickcompile/bootimage/Android.mk" dest="kernel/Android.mk" />
     <copyfile src="quickcompile/recovery/Android.mk" dest="bootable/Android.mk" />
-  </project>
-  
   <project path="vendor/nameless/api" name="NamelessRom/website_api" revision="master" />
   <!-- Nameless END -->
 
