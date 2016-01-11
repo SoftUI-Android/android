@@ -1,7 +1,11 @@
 SoftUI
 =========================
 SoftUI는 Nameless 기반 롬입니다.
+
 Nameless GITHUB│Github.com/NamelessRom
+Nameless HOMEPAGE│Nameless-rom.org
+SoftUI GITHUB│Github.com/Soft-UI
+SoftUI HOMEPAGE│SoftUI.PE.HU
 
 Thanks TO
 =========================
@@ -40,12 +44,15 @@ Dokdo-project
 
 (GalaxyS3 RIL)
 
+빌드 시작
+=========================
+
 repo init -u https://github.com/Soft-UI/android.git -b SoftUI-1.0
 
-repo sync
+repo sync -j16
 
 빌드 환경
--------
+=========================
 
 You need to have gradle installed. Please have a look at the [Installation Guide](https://docs.gradle.org/current/userguide/installation.html) or at our gradle [Installation Script](https://github.com/NamelessRom/android_vendor_nameless/blob/n-2.1/tools/installation/install-gradle.sh), which automatically installs gradle for you.
 
