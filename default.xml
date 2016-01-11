@@ -39,7 +39,7 @@
   <project path="external/sepolicy" name="NamelessRom/android_external_sepolicy" groups="pdk" revision="n-2.1" />
   <project path="external/skia" name="NamelessRom/android_external_skia" groups="pdk-cw-fs" revision="n-2.1" />
   <project path="frameworks/av" name="NamelessRom/android_frameworks_av" groups="pdk" revision="n-2.1" />
-  <project path="frameworks/base" name="SoftUI/android_frameworks_base" />
+  <project path="frameworks/base" name="Soft-UI/android_frameworks_base" />
   <project path="frameworks/native" name="NamelessRom/android_frameworks_native" groups="pdk" revision="n-2.1" />
   <project path="frameworks/volley" name="NamelessRom/android_frameworks_volley" revision="n-2.1" />
   <project path="hardware/broadcom/wlan" name="NamelessRom/android_hardware_broadcom_wlan" groups="broadcom_wlan" revision="n-2.1" />
