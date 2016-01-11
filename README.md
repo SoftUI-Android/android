@@ -1,14 +1,50 @@
 SoftUI
 =========================
-NamelessRom기반롬
+SoftUI는 Nameless 기반 롬입니다.
+Nameless GITHUB│Github.com/NamelessRom
 
-Work in Progress!
+Thanks TO
+=========================
+GOOGLE
 
-To get started
+(GOOGLEKOREANKEYBOARD)
 
-repo init -u https://github.com/NamelessRom/android.git -b n-2.1
+CYANOGENMOD
 
-Requirements
+(SOURCE)
+
+Nameless
+(SOURCE)
+
+MatthewBooth
+
+(OTAupdate)
+
+Evisceration
+
+(DeviceControl)
+
+arter97
+
+(GalaxyS3 RIL)
+
+갤3
+
+(GalaxyS3 RIL)
+
+Sleepy
+
+(GalaxyS3 RIL)
+
+Dokdo-project
+
+(GalaxyS3 RIL)
+
+repo init -u https://github.com/Soft-UI/android.git -b SoftUI-1.0
+
+repo sync
+
+빌드 환경
 -------
 
 You need to have gradle installed. Please have a look at the [Installation Guide](https://docs.gradle.org/current/userguide/installation.html) or at our gradle [Installation Script](https://github.com/NamelessRom/android_vendor_nameless/blob/n-2.1/tools/installation/install-gradle.sh), which automatically installs gradle for you.
