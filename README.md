@@ -31,6 +31,10 @@ Evisceration
 
 (DeviceControl)
 
+ckh469
+
+(GalaxyS3 RIL)
+
 arter97
 
 (GalaxyS3 RIL)
