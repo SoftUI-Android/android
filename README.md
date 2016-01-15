@@ -51,6 +51,10 @@ Dokdo-project
 
 (GalaxyS3 RIL)
 
+Sony
+
+(clock widget)
+
 빌드 시작
 =========================
 
